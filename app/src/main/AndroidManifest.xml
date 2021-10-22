@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kantinsehat.milenial">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application xmlns:tools="http://schemas.android.com/tools"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KantinSehat"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:theme">
+        <activity
+            android:name=".ScanUser"
+            android:exported="true" />
+        <activity
+            android:name=".Ending"
+            android:exported="true" />
+        <activity
+            android:name=".PesananInfo"
+            android:exported="true" />
+        <activity
+            android:name=".ScanPesanan"
+            android:exported="true" />
+        <activity
+            android:name=".PesananJajanan"
+            android:exported="true" />
+        <activity
+            android:name=".PesananMinuman"
+            android:exported="true" />
+        <activity
+            android:name=".KeranjangPesanan"
+            android:exported="true" />
+        <activity
+            android:name=".PesananMakanan"
+            android:exported="true" />
+        <activity
+            android:name=".MenuPager"
+            android:exported="true" />
+        <activity
+            android:name=".SaldoInfo"
+            android:exported="true" />
+        <activity
+            android:name=".ScanSaldoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
